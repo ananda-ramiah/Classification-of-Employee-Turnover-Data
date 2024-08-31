@@ -1,26 +1,37 @@
-# Regression-of-Taxi-fare-data
+# Classification of Employee Turnover
 
-## Overview 
-This project aimed to create a multiple linear regression and random forest model to predict whether or not a rider gratuity is high. This project utilized yellow taxi trips taken in New York City during 2017. The final random forest model was performed with 86% accuracy and 72% precision, determining the features most important in separating low tippers from high tippers. Based on the model, the duration, distance, and cost of the trip were most influential in determining a generous tipper (>20%) vs a non-generous one (<20%). 
+**Click [here](https://github.com/ananda-ramiah/Classification-of-Employee-Turnover-Data/blob/main/Course%207%20Salifort%20Motors%20project%20lab.pdf) to view the capstone project, which includes detailed explanations for each step.**
 
-## Business Understanding 
-According to salary.com the average salary for a New York Taxi Driver is around $45,000. This salary is significantly low compared to a median rent value of $6,500 per month. It is important to understand what factors encourage riders to leave tips to help drivers obtain a livable wage. 
+### Overview
 
-## Data Understanding
-The NYC Taxi and Limousine Commission data came from 
-NYC.gov
-. The data consisted of approximately 408k unique trips and 18 features. The features included information on trip duration and destination, vendor used, toll information, and payment type. The bar chart below shows the breakdown of how many generous tippers (>20%) versus non-generous tippers that exist in the data set. 
+The goal of this project was to create a predictive model for employee turnover through multiple logistic regression or machine learning algorithms such as Decision Tree, Random Forest, and eXtreme Gradient Boosting (XGBoost). This Google Advanced Data Analytics Professional Certificate capstone project utilized employee statistics from the fictional company Salifort Motors. The best model for this analysis was XGBoost with tuned hyperparameters. The metrics below are the metrics for the model's success on the test set:
 
-![image](https://github.com/user-attachments/assets/50e72cea-3849-46e5-a330-1c73fb904556)
-Graph shows the percentage of Non-Generous and Generous Tippers.
+|Model Name|Precision|Recall|F1 Score|Accuracy|AUC
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|XGBoost (with feature engineering)| 90.1%| 87.8%| 89.0%| 96.4%| 97.0%|
 
-In connection to this, a feature was engineered to represent if a ride was taken during rush hour or not. Multiple redundant columns were dropped and reformatted into the proper data type.  
+Using an XGBoost (FE) model, we see that the main predictive features in determining if an employee will leave are: `number_project`, `tenure`, `last_evaluation`, `overworked`, `work_accident`, and `salary`.
 
-## Modeling and Evaluation 
-A random forest model comprising 100 decision trees was used to determine feature importance in who would tip generously or not. The below plot shows that trip duration, distance, and the cost of a fare were the Top 3 most important factors in determining a generous tipper from a non-generous one. The overall model performed with 86% accuracy and 72% precision. 
+### Business Understanding
 
-![image](https://github.com/user-attachments/assets/a9cc8267-637a-458f-bd13-b4de00929561)
-Horizontal bar chart showing feature importance of random forest model.
+Salifort’s senior leadership team is concerned about how many employees are leaving the company. The high turnover rate is costly in the financial sense because Salifort makes a big investment in recruiting, training, and upskilling its employees. If Salifort could predict whether an employee will leave the company, and discover the reasons behind their departure, they could better understand the problem and develop a solution.
 
-## Conclusion
-This model can benefit Taxi Drivers in knowing if they will be tipped generously or not; however, running a parametric model to determine how much each variable will influence the actual price of the tip. In the future, adding more information on a rider’s past tipping behavior may also be beneficial in helping the stakeholder address their business problem. 
+### Data Understanding
+
+The fictional company's data came from [Kaggle](https://www.kaggle.com/datasets/mfaisalqureshi/hr-analytics-and-job-prediction?select=HR_comma_sep.csv) and is free to use according to this [license](https://creativecommons.org/publicdomain/zero/1.0/). The data consisted of approximately 12k unique employees and 10 features per employee. The features included information on employee satisfaction, evaluation score, number of projects contributed to, the average number of hours worked per month, tenure at the company, whether they had a work accident if they were promoted within the last 5 years, the department worked for, and salary. The pie chart below shows the proportion of employees at Salifort Motors, with 0 meaning the employee has stayed and 1 meaning the employee has left.
+
+<p align="center">
+    <img src="images/pie chart.png" title="Employee Proportion" height="40%" width="40%">
+</p>
+
+### Modeling and Evaluation
+
+An XGBoost model with tuned hyperparameters and feature engineering was used to determine what feature caused employee churn at Salifort Motors. The below plot shows that the number of contributing projects, tenure with the company, last evaluation score, working an average of over 175 hours per month, experiencing an accident, and salary are important factors.
+
+<p align="center">
+    <img src="images/feature importance bar chart.png" title="Feature Importances - XGBoost with Feature Engineering" height="40%" width="40%">
+</p>
+
+### Conclusion
+
+The XGBoost model that was developed can benefit Salifort Motors in knowing if an employee is leaving or not. Dedicating resources into the feature importance will limit employee turnover while promoting good work culture.

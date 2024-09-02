@@ -1,6 +1,6 @@
 # Salifort Motors Workforce Turnover Analysis
 
-**Click [here](https://github.com/ananda-ramiah/Classification-of-Employee-Turnover-Data/blob/main/Course%207%20Salifort%20Motors%20project%20lab.pdf) to view the capstone project, which includes detailed explanations for each step.**
+**Click [here](https://github.com/ananda-ramiah/Salifort-Motors-Workforce-Turnover-Analysis/blob/main/Activity_%20Course%207%20Salifort%20Motors%20project%20lab.ipynb) to view the capstone project, which includes detailed explanations for each step.**
 
 ### Overview
 

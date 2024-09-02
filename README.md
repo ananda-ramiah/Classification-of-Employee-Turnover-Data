@@ -1,4 +1,4 @@
-# Classification of Employee Turnover at Motors company
+# Salifort Motors Workforce Turnover Analysis
 
 **Click [here](https://github.com/ananda-ramiah/Classification-of-Employee-Turnover-Data/blob/main/Course%207%20Salifort%20Motors%20project%20lab.pdf) to view the capstone project, which includes detailed explanations for each step.**
 

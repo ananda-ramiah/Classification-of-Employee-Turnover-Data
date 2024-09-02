@@ -1,37 +1,15 @@
 # Salifort Motors Workforce Turnover Analysis
 
-**Click [here](https://github.com/ananda-ramiah/Classification-of-Employee-Turnover-Data/blob/main/Course%207%20Salifort%20Motors%20project%20lab.pdf) to view the capstone project, which includes detailed explanations for each step.**
+### Background of the Salifort Motors Scenario
 
-### Overview
+#### About the company
 
-The goal of this project was to create a predictive model for employee turnover through multiple logistic regression or machine learning algorithms such as Decision Tree, Random Forest, and eXtreme Gradient Boosting (XGBoost). This Google Advanced Data Analytics Professional Certificate capstone project utilized employee statistics from the fictional company Salifort Motors. The best model for this analysis was XGBoost with tuned hyperparameters. The metrics below are the metrics for the model's success on the test set:
+Salifort Motors is a fictional French-based alternative energy vehicle manufacturer. Its global workforce of over 100,000 employees research, design, construct, validate, and distribute electric, solar, algae, and hydrogen-based vehicles. Salifort’s end-to-end vertical integration model has made it a global leader at the intersection of alternative energy and automobiles.
 
-|Model Name|Precision|Recall|F1 Score|Accuracy|AUC
-|:---:|:---:|:---:|:---:|:---:|:---:|
-|XGBoost (with feature engineering)| 90.1%| 87.8%| 89.0%| 96.4%| 97.0%|
+#### Your business case
 
-Using an XGBoost (FE) model, we see that the main predictive features in determining if an employee will leave are: `number_project`, `tenure`, `last_evaluation`, `overworked`, `work_accident`, and `salary`.
+As a data specialist working for Salifort Motors, you have received the results of a recent employee survey. The senior leadership team has tasked you with analyzing the data to come up with ideas for how to increase employee retention. To help with this, they would like you to design a model that predicts whether an employee will leave the company based on their department, number of projects, average monthly hours, and any other data points you deem helpful.
 
-### Business Understanding
+#### The value of your deliverable
 
-Salifort’s senior leadership team is concerned about how many employees are leaving the company. The high turnover rate is costly in the financial sense because Salifort makes a big investment in recruiting, training, and upskilling its employees. If Salifort could predict whether an employee will leave the company, and discover the reasons behind their departure, they could better understand the problem and develop a solution.
-
-### Data Understanding
-
-The fictional company's data came from [Kaggle](https://www.kaggle.com/datasets/mfaisalqureshi/hr-analytics-and-job-prediction?select=HR_comma_sep.csv) and is free to use according to this [license](https://creativecommons.org/publicdomain/zero/1.0/). The data consisted of approximately 12k unique employees and 10 features per employee. The features included information on employee satisfaction, evaluation score, number of projects contributed to, the average number of hours worked per month, tenure at the company, whether they had a work accident if they were promoted within the last 5 years, the department worked for, and salary. The pie chart below shows the proportion of employees at Salifort Motors, with 0 meaning the employee has stayed and 1 meaning the employee has left.
-
-<p align="center">
-    <img src="images/pie chart.png" title="Employee Proportion" height="40%" width="40%">
-</p>
-
-### Modeling and Evaluation
-
-An XGBoost model with tuned hyperparameters and feature engineering was used to determine what feature caused employee churn at Salifort Motors. The below plot shows that the number of contributing projects, tenure with the company, last evaluation score, working an average of over 175 hours per month, experiencing an accident, and salary are important factors.
-
-<p align="center">
-    <img src="images/feature importance bar chart.png" title="Feature Importances - XGBoost with Feature Engineering" height="40%" width="40%">
-</p>
-
-### Conclusion
-
-The XGBoost model that was developed can benefit Salifort Motors in knowing if an employee is leaving or not. Dedicating resources into the feature importance will limit employee turnover while promoting good work culture.
+For this deliverable, you are asked to choose a method to approach this data challenge based on your prior course work. Select either a regression model or a tree-based machine learning model to predict whether an employee will leave the company. Both approaches are shown in the project exemplar, but only one is needed to complete your project.

@@ -37,3 +37,11 @@ An XGBoost model with tuned hyperparameters and feature engineering was used to 
 ### Conclusion
 
 The XGBoost model that was developed can benefit Salifort Motors in knowing if an employee is leaving or not. Dedicating resources into the feature importance will limit employee turnover while promoting good work culture.
+
+The models and the feature importances extracted from the models confirm that employees at the company are overworked.
+
+To reduce the number of employees leaving the company, the company should consider the following:
+
+- Cap the number of projects an employee can work on at a time.
+- Reward employees for working longer hours and for working on more projects, or don't require them to do so.
+- High evaluation score shouldn't just be based on the number of projects and hours worked, but also on the quality of the work

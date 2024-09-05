@@ -37,6 +37,13 @@ I implemented two machine learning algorithms and matched them against each othe
 ![Logistic Regression Confusion Matrix](https://github.com/user-attachments/assets/70d76271-8fc1-4465-bbe3-f6bad9491561)
 ![Random Tree Confusion Matrix](https://github.com/user-attachments/assets/4cc612aa-bae5-41ed-9177-8be8d532ced6)
 
+From the figure above we clearly see that the random forest (to the right) is the superior model compared to the logistic regression model (to the left).
+This statement is also supported by the four success metrics.
+
+The random forest classifier defines feature importance on the principle of how well that feature minimizes the impurity of a decision node. So in this context these features can be interpreted as good indicators for employee retainment. There are four features which are predominantely important as visualized in the barplot below.
+
+![Random Forest Feature Importance Bar Chart](https://github.com/user-attachments/assets/9c0a7c1b-8b41-49ec-90ba-e91ab2b8f210)
+
 
 ### Conclusion
 

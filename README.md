@@ -36,12 +36,16 @@ An XGBoost model with tuned hyperparameters and feature engineering was used to 
 
 ### Conclusion
 
-The XGBoost model that was developed can benefit Salifort Motors in knowing if an employee is leaving or not. Dedicating resources into the feature importance will limit employee turnover while promoting good work culture.
-
-The models and the feature importances extracted from the models confirm that employees at the company are overworked.
+The models and the feature importances extracted from the models confirm that employees at the company are overworked and not rewarded according to the effort exrted on projects.
 
 To reduce the number of employees leaving the company, the company should consider the following:
 
 - Cap the number of projects an employee can work on at a time.
-- Reward employees for working longer hours and for working on more projects, or don't require them to do so.
+- Reward employees for working longer hours and for working on more projects.
+- Consider promoting employees who have been with the company for atleast four years, or conduct further investigation about why four-year tenured employees are so dissatisfied.
+- If employees aren't familiar with the company's overtime pay policies, inform them about this. If the expectations around workload and time off aren't explicit, make them clear.
 - High evaluation score shouldn't just be based on the number of projects and hours worked, but also on the quality of the work
+
+#### Next Steps
+
+It may be justified to still have some concern about data leakage. It could be prudent to consider how predictions change when last_evaluation is removed from the data. It's possible that evaluations aren't performed very frequently, in which case it would be useful to be able to predict employee retention without this feature. It's also possible that the evaluation score determines whether an employee leaves or stays, in which case it could be useful to pivot and try to predict performance score. The same could be said for satisfaction score.

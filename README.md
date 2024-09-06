@@ -1,8 +1,8 @@
 # Salifort Motors Workforce Turnover Analysis
 
-### :clipboard: Background of the Salifort Motors Scenario
+## :clipboard: Background of the Salifort Motors Scenario
 
-#### :office: About the company
+### :office: About the company
 
 Salifort Motors is a fictional French-based alternative energy vehicle manufacturer. Its over 100,000 employees research, design, construct, validate, and distribute electric, solar, algae, and hydrogen-based vehicles. Salifort’s end-to-end vertical integration model has made it a global leader at the intersection of alternative energy and automobiles.
 
@@ -65,6 +65,6 @@ To reduce the number of employees leaving the company, the company should consid
 - If employees aren't familiar with the company's overtime pay policies, inform them about this. If the expectations around workload and time off aren't explicit, make them clear.
 - High evaluation score shouldn't just be based on the number of projects and hours worked, but also on the quality of the work.
 
-#### :black_nib: Next Steps
+### :black_nib: Next Steps
 
 It may be justified to still have some concern about data leakage. It could be prudent to consider how predictions change when last_evaluation is removed from the data. It's possible that evaluations aren't performed very frequently, in which case it would be useful to be able to predict employee retention without this feature. It's also possible that the evaluation score determines whether an employee leaves or stays, in which case it could be useful to pivot and try to predict performance score. The same could be said for satisfaction score.

@@ -8,7 +8,7 @@ Salifort Motors is a fictional French-based alternative energy vehicle manufactu
 
 As a data specialist working for Salifort Motors, you have received the results of a recent employee survey. The senior leadership team has tasked you with analyzing the data to develop ideas for increasing employee retention. To help with this, they would like you to design a model that predicts whether an employee will leave the company based on their department, number of projects, average monthly hours, and any other data points you deem helpful.
 
-**Click [here](https://github.com/ananda-ramiah/Salifort-Motors-Workforce-Turnover-Analysis/blob/main/Activity_%20Course%207%20Salifort%20Motors%20project%20lab.ipynb) to view the capstone project, which includes detailed explanations for each step.**
+**Click [here](https://github.com/ananda-ramiah/Salifort-Motors-Workforce-Turnover-Analysis/blob/main/Salifort%20Motors%20project%20lab.ipynb) to view the capstone project, which includes detailed explanations for each step.**
 
 ### :scroll: Project Overview
 

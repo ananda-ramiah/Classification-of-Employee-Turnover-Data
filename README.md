@@ -55,7 +55,7 @@ To reduce the number of employees leaving the company, the company should consid
 - Reward employees for working longer hours and for working on more projects.
 - Consider promoting employees who have been with the company for atleast four years, or conduct further investigation about why four-year tenured employees are so dissatisfied.
 - If employees aren't familiar with the company's overtime pay policies, inform them about this. If the expectations around workload and time off aren't explicit, make them clear.
-- High evaluation score shouldn't just be based on the number of projects and hours worked, but also on the quality of the work
+- High evaluation score shouldn't just be based on the number of projects and hours worked, but also on the quality of the work.
 
 #### Next Steps
 
